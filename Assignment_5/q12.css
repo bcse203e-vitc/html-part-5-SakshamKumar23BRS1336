@@ -1,0 +1,63 @@
+/* Base styles for both themes */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Light theme styles */
+.light-theme {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.light-theme .container {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme styles */
+.dark-theme {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.dark-theme .container {
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
