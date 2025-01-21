@@ -1,0 +1,71 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animated text */
+.animated-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00bcd4;
+  animation: textAnimation 5s infinite alternate;
+}
+
+/* Subtext */
+.sub-text {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on sub-text */
+.sub-text:hover {
+  color: #ff6ec7;
+}
+
+/* Keyframe animation for text */
+@keyframes textAnimation {
+  0% {
+    color: #00bcd4;
+    transform: translateY(0);
+    font-size: 3rem;
+  }
+  25% {
+    color: #ff6ec7;
+    transform: translateY(-10px);
+    font-size: 3.5rem;
+  }
+  50% {
+    color: #ff9800;
+    transform: translateY(0);
+    font-size: 4rem;
+  }
+  75% {
+    color: #4caf50;
+    transform: translateY(10px);
+    font-size: 3.5rem;
+  }
+  100% {
+    color: #f44336;
+    transform: translateY(0);
+    font-size: 3rem;
+  }
+}
