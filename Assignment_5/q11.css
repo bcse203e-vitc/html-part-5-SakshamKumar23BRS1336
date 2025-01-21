@@ -1,0 +1,38 @@
+/* General reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Styling the box */
+.box {
+  width: 40%; /* Fixed width in percentage */
+  height: 20%; /* Fixed height in percentage */
+  padding: 10%; /* Padding in percentage */
+  margin: 5%; /* Margin in percentage */
+  background-color: #3498db; /* Blue background */
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #2980b9; /* Initial border thickness and color */
+  border-radius: 8px;
+  transition: border 0.3s ease-in-out; /* Smooth transition for the border */
+}
+
+/* Hover effect for the border */
+.box:hover {
+  border: 10px solid #e74c3c; /* Change thickness and color on hover */
+}
+
