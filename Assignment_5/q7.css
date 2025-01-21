@@ -1,0 +1,62 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sticky navigation bar styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #575757;
+}
+
+/* Active link style */
+.nav-link.active {
+  background-color: #ff6ec7;
+}
+
+/* Section styles */
+.section {
+  padding: 60px 20px;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+section:nth-child(even) {
+  background-color: #e2e2e2;
+}
+
+/* Section headings */
+h2 {
+  text-align: center;
+  color: #333;
+}
